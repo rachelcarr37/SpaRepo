@@ -22,12 +22,12 @@
 			<div align="center" th:if="${param.error}">
 				<h4 style="color: red">Login unsuccessful.</h4>
 			</div>
-			<button class="btn btn-md btn-success btn-block" name="Submit"
+			<button class="btn btn-md btn-dark btn-block" name="Submit"
 				value="Login" type="Submit">Log in</button>
 
 		</form>
 		<form th:action="@{/signup}" method="get">
-			<button type="Submit" class="btn btn-lg btn-primary">Signup</button>
+			<button type="Submit" class="btn btn-lg btn-light">Signup</button>
 		</form>
 	</div>
 	<div th:replace="fragments/footer"></div>

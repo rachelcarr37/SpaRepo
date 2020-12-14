@@ -9,11 +9,9 @@
 		<div class="jumbotron">
 			<div class="container">
 				<h1 class="display-3">Corona Touch U Spa</h1>
-				<p>This is a small e-commerce application that allows the user
-					to purchase some of a few products that are offered here.</p>
+				<p>Come visit our spa for some post-pandemic wellness!</p>
 				<p>
-					<a class="btn btn-primary btn-lg" href="/about" role="button">Learn
-						more &raquo;</a>
+					<a class="btn btn-dark btn-lg" href="/about" role="button">About Us &raquo;</a>
 				</p>
 			</div>
 		</div>
@@ -27,7 +25,7 @@
 						<div class="card-body">
 							<h5 class="card-title" th:text="${product.name}"></h5>
 							<p class="card-text" th:text="${product.description}"></p>
-							<a th:href="@{/product/} + ${product.id}" class="btn btn-primary">Read</a>
+							<a th:href="@{/product/} + ${product.id}" class="btn btn-dark">Details</a>
 						</div>
 					</div>
 				</div> 
@@ -37,7 +35,7 @@
 		</div>
 	</main>
 
-	<footer th:replace="fragments/footer"></footer>
+	<div th:replace="fragments/footer"></div>
 </body>
 </html>
 

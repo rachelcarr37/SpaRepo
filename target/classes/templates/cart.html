@@ -31,7 +31,7 @@
                               <form th:action="@{/cart/delete}" method="post" style="display: inline">
                                   <input type="hidden" name="_method" value="DELETE" />
                                   <input type="hidden" name="id" th:value="${product.id}" />
-                                  <button class="btn btn-danger" style="display: inline" type="submit">Delete</button>
+                                  <button class="btn btn-warning" style="display: inline" type="submit">Delete</button>
                               </form>
                           </td>
                       </tr>
@@ -51,12 +51,12 @@
               <form th:action="@{/cart/update}" method="post" id="updateForm" th:if="${cart.size() > 0}">
                   <!-- form doesn't support PATCH requests, but this tells Spring Boot to use @PatchMapping anyway. -->
                   <input type="hidden" name="_method" value="PATCH" />
-                  <button type="submit" class="btn btn-primary">Update Cart</button>
+                  <button type="submit" class="btn btn-light">Update Cart</button>
               </form>
               <form th:action="@{/checkout}" method="get" id="updateForm" th:if="${cart.size() > 0}">
                   <!-- form doesn't support PATCH requests, but this tells Spring Boot to use @PatchMapping anyway. -->
                   <input type="hidden" name="_method" value="PATCH" />
-                  <button type="submit" class="btn btn-primary">Checkout</button>
+                  <button type="submit" class="btn btn-light">Checkout</button>
               </form>
               <div th:if="${cart.size() == 0}">Nothing in your cart yet.</div>
           </div>

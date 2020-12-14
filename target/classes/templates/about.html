@@ -1,12 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>About</title>
-</head>
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="fragments/header"></head>
 <body>
-This is the about page.
-<h1>Under Construction!</h1>
-<iframe src="https://i.giphy.com/media/S5JSwmQYHOGMo/200.gif" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+	<div th:replace="fragments/navbar"></div>
+<title>About</title>
+<h1>Corona Touch U Spa</h1>
+<img src="https://www.graphicsprings.com/filestorage/stencils/bc6f698cab71d8d0b1baa17bdace1c9f.svg">
+<p align = "center"> Is a Luxurious Spa that is located on the south end, Where we have a very relaxing and soothing environment, Where you can come enjoy Facial's to Massages, Also Nail care services. 
+ We also offer affordable packages, Free Refreshments</p>
+ <footer th:replace="fragments/footer"></footer>
 </body>
+
 </html>

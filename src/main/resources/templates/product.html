@@ -22,7 +22,7 @@
 						<p class="card-text" th:text="${product.description}"></p>
 						<form th:action="@{/cart}" th:object="${product}" method="post">
 							<input type="hidden"  th:field="*{id}"/>
-							<button type="submit" class="btn btn-primary">Add to
+							<button type="submit" class="btn btn-dark">Add to
 								Cart</button>
 						</form>
 					</div>
